@@ -1,0 +1,267 @@
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+header{
+    background-color: rgb(255, 246, 238);
+
+}
+header p{
+    color:rgba(26, 17, 10, 0.637);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+
+h1{
+    color:rgb(94, 69, 47);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: center;
+    font-size: 50px;
+    
+}
+header h1 {
+    display: flex;         /* Trata o H1 como um container flexível */
+    align-items: center;   /* Alinha verticalmente a imagem e o texto no centro */
+    justify-content: center; /* Opcional: Centraliza o conteúdo do H1 (imagem + texto) horizontalmente dentro do espaço do H1 */
+    /* Remova ou ajuste 'justify-content' se o H1 não deve ser centralizado no header */
+}
+header h1 img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+h1 span {
+    color: #007bff;
+}
+
+nav {
+    background-color:rgb(192, 169, 148); 
+    padding: 10px; 
+}
+h1 span{
+    color: #d1bb94;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    text-align: center;
+}
+button {
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color:rgb(255, 246, 238);
+    border-style:none;
+    background-color:rgb(192, 169, 148); /*cor do fundo dos botoes*/
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+button a{
+    color:rgb(94, 69, 47); /*cor home e local*/
+    text-decoration: none;
+    text-align: center;
+}
+button a span{ 
+    color: #ffffff; /*cor contato e sobre*/
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;          
+}
+section{
+    background-color: rgb(255, 246, 238);
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+}
+footer{
+    background-color:rgb(192, 169, 148); 
+    padding: 10px; 
+}
+footer img {
+    width: 30px; 
+    height: 30px;
+    vertical-align: middle;
+}
+footer a{
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style:none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.footer-link-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.container{
+    padding: 20px;
+}
+hr{
+    border-style: groove;
+    border-color:rgb(94, 69, 47);
+}
+div img{ 
+    border-style: groove;
+    size: 200px;
+    color: white;
+
+ }
+h2 div{
+        color: rgb(94, 69, 47);
+        text-align: center;
+        font-size: 35px;
+        
+}
+h2 div span{
+        color: rgb(192, 169, 148);
+        text-align: center;
+}
+h2 p{
+    text-align:center;
+}
+.image-row img {
+    width: 250px;
+    height:250px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 20px;
+    border-radius: 20%;
+    object-fit: cover; 
+}
+  
+  
+  .image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    text-align: center;
+  }
+  
+  .image-row > div {
+      flex-basis: 45%;
+      margin-bottom: 20px;
+  }
+.container iframe{ 
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        height: 450px;
+        border-style: groove;
+        border-color:rgb(94, 69, 47);
+        margin: 20px auto;
+    }
+.container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+section img{
+    border-style: none;
+    
+}
+.about-section {
+    display: flex; /* Ativa o layout Flexbox */
+    align-items: center; /* Alinha verticalmente a imagem e o texto (ex: centro) */
+    gap: 30px; /* Espaço horizontal entre a imagem e o texto */
+    margin-top: 20px; /* Espaço abaixo do título h2 */
+    flex-wrap: wrap; /* Permite que o texto vá para baixo da imagem em telas menores */
+    padding-bottom: 40px; /* Espaço antes do rodapé */
+}
+
+.about-image {
+    flex: 1 1 40%; /* Define como a imagem ocupa espaço (cresce, encolhe, base ~40%) */
+    /* Opcional: Limitar o tamanho máximo da imagem */
+     max-width: 450px;
+}
+
+.about-image img {
+    display: block; /* Remove espaço extra abaixo da imagem */
+    width: 100%; /* Faz a imagem preencher o container .about-image */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Opcional: Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: Sombra suave */
+}
+
+.about-text {
+    flex: 1 1 55%; /* Define como o texto ocupa espaço (cresce, encolhe, base ~55%) */
+    text-align: center;
+}
+
+.about-text h3 {
+    margin-top: 0; /* Remove margem do topo se for o primeiro elemento */
+    margin-bottom: 15px;
+    color: #333; /* Cor do subtítulo (ajuste se necessário) */
+    font-size: 1.4em;
+    text-align: ce
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:rgb(94, 69, 47);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color:rgb(94, 69, 47);
+}
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column; /* Added semicolon */
+    }
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-image {
+        flex-basis: auto; /* Added value 'auto' and semicolon */
+        width: 80%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .cta-button {
+        margin: 15px auto 0;
+    }
+}
+.container > h2 {
+    color:rgb(94, 69, 47);
+}
+
+
+.container > h2 span {
+    color: rgb(192, 169, 148); 
+}
