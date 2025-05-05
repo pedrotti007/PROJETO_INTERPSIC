@@ -154,12 +154,24 @@ h2 p{
       flex-basis: 45%;
       margin-bottom: 20px;
   }
+
+/* Estilos para os retângulos na página de contato */
+.contact-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-style: none;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px; 
+    margin-bottom: 20px;
+}
 .container iframe{ 
         display: block;
         width: 100%;
         max-width: 400px;
         height: 450px;
-        border-style: groove;
+        border-style: none  ;
         border-color:rgb(94, 69, 47);
         margin: 20px auto;
     }
