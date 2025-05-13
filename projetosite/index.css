@@ -34,10 +34,6 @@ header h1 img {
     margin-right: 10px;
 }
 
-h1 span {
-    color: #007bff;
-}
-
 nav {
     background-color:rgb(192, 169, 148); 
     padding: 10px; 
@@ -78,6 +74,7 @@ section{
     width: 100%;
     flex: 1;
     padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 footer{
     background-color:rgb(192, 169, 148); 
@@ -110,8 +107,6 @@ hr{
 }
 div img{ 
     border-style: groove;
-    size: 200px;
-    color: white;
 }
 
 h2 div{
@@ -121,7 +116,7 @@ h2 div{
  }
 
 h2 div span{
-        color: rgb(192, 169, 148);
+        color: #c0a994;
         text-align: center;
 }
 h2 p{
@@ -138,7 +133,9 @@ h2 p{
     object-fit: cover; 
 }
 section div h3 span{
-    color: rgb(192, 169, 148);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    color: rgb(192, 169, 148); 
 } 
 .image-row {
     display: flex;
@@ -210,7 +207,7 @@ section img{
     margin-bottom: 15px;
     color: #333; /* Cor do subtítulo (ajuste se necessário) */
     font-size: 1.4em;
-    text-align: ce
+    text-align: center;
 }
 
 .about-text p {
@@ -228,25 +225,24 @@ section img{
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+        margin-top: 10px;
     font-weight: bold;
 }
 .cta-button:hover {
-    background-color:rgb(94, 69, 47);
+    background-color:rgb(74, 49, 27);
+    transform: scale(1.05);
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     .image-row {
-        flex-direction: column; /* Added semicolon */
+        flex-direction: column;
     }
     .about-section {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
-
     .about-image {
-        flex-basis: auto; /* Added value 'auto' and semicolon */
+        flex-basis: auto;
         width: 80%;
         max-width: 100px;
         margin: 0 auto;
@@ -266,7 +262,4 @@ section img{
 }
 .container > h2 span {
     color: rgb(192, 169, 148); 
-}
-section div img {
-    size :20px;
 }
